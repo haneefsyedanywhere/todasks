@@ -1,0 +1,21 @@
+.toast {
+  box-shadow: 2px 2px 8px #d4d4d4;
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  min-width: 50%;
+  text-align: center;
+  background-color: $white;
+  font-size: 14px;
+  &.success {
+    box-shadow: 2px 2px 8px $green;
+    color: $green;
+  }
+  &.error {
+    box-shadow: 2px 2px 8px $red;
+    color: $red;
+  }
+}

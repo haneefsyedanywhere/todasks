@@ -1,0 +1,70 @@
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 8px;
+  border: 1px solid $grey-100;
+  box-shadow: 2px 2px 8px #d4d4d4;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+
+  &:hover {
+    box-shadow: none;
+  }
+  &.selected {
+    border: 1px solid $grey-100;
+    box-shadow: none;
+  }
+}
+
+.radio-button {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid $grey-100;
+  border-radius: 50%;
+  &:hover {
+    box-shadow: 2px 2px 8px rgba($color: #d4d4d4, $alpha: 0.5);
+  }
+  &.done {
+    position: relative;
+    background-color: $green;
+    border-color: $green;
+    &:hover {
+      box-shadow: 2px 2px 8px rgba($color: $green, $alpha: 0.5);
+    }
+    &::before {
+      @extend %centerer;
+      content: '';
+      width: 10px;
+      height: 8px;
+      display: inline-block;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.79079 0.46967C10.0697 0.762563 10.0697 1.23744 9.79079 1.53033L4.0765 7.53033C3.79756 7.82322 3.3453 7.82322 3.06635 7.53033L0.209209 4.53033C-0.0697365 4.23744 -0.0697365 3.76256 0.209209 3.46967C0.488155 3.17678 0.940416 3.17678 1.21936 3.46967L3.57143 5.93934L8.78064 0.46967C9.05958 0.176777 9.51184 0.176777 9.79079 0.46967Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+    }
+  }
+}
+.delete-button {
+  border: none;
+  background-color: initial;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: $red;
+    svg path {
+      fill: $white;
+    }
+  }
+}

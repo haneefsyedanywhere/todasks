@@ -1,0 +1,45 @@
+.add-todo {
+  border: 1px solid $grey-100;
+  border-radius: 4px;
+  height: 40px;
+
+  form {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    border-radius: inherit;
+    position: relative;
+  }
+  input,
+  button {
+    border: none;
+    outline: none;
+    border-radius: inherit;
+  }
+  input {
+    box-sizing: border-box;
+    height: 100%;
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .error-msg {
+    color: $red;
+    font-size: 12px;
+    position: absolute;
+    top: calc(100% + 6px);
+  }
+  button {
+    width: 40px;
+    height: 100%;
+    min-width: 24px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: $grey-100;
+    border-radius: 0 1px 1px 0;
+    transition: 0.2s all linear;
+    &:hover {
+      background-color: $grey-200;
+    }
+  }
+}

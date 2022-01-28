@@ -1,0 +1,43 @@
+@for $var from 1 to 5 {
+  $value: $var * $unit;
+  .mt-#{$var} {
+    margin-top: $value;
+  }
+  .mb-#{$var} {
+    margin-bottom: $value;
+  }
+  .ml-#{$var} {
+    margin-left: $value;
+  }
+  .mr-#{$var} {
+    margin-right: $value;
+  }
+  .pt-#{$var} {
+    padding-top: $value;
+  }
+  .pb-#{$var} {
+    padding-bottom: $value;
+  }
+  .pl-#{$var} {
+    padding-left: $value;
+  }
+  .pr-#{$var} {
+    padding-right: $value;
+  }
+  .mx-#{$var} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$var} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .px-#{$var} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$var} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
